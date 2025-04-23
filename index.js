@@ -6,10 +6,9 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 
-// Sample API route
 app.get('/api', (req, res) => {
   res.json({
-    message: 'API working live on Heroku!',
+    message: 'API working live on Render!',
     db_uri: process.env.DB_URI,
     jwt: process.env.JWT_SECRET
   });
